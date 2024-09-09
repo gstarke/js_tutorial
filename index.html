@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <title>Learn Enough JavaScript</title>
   <script>
-    alert("hello, world!");
-    console.log("This page contains a friendly greeting.");
+    const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let now = new Date();
+    let dayName = daysOfTheWeek[now.getDay()];
+    alert(`Hello, world! Happy ${dayName}.`);
   </script>
 </head>
 
